@@ -1,0 +1,29 @@
+{
+  "components": [
+    {
+      "label": "Question",
+      "type": "textfield",
+      "id": "Field_1v9voib",
+      "key": "question",
+      "disabled": true
+    },
+    {
+      "label": "Answer",
+      "type": "number",
+      "id": "Field_1ngml17",
+      "key": "answer",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "4296f7b"
+  },
+  "type": "default",
+  "id": "Form_2068cad0-bfbf-4430-82e3-5782df48b48f",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}

@@ -1,0 +1,18 @@
+{
+  "components": [
+    {
+      "text": "# Race to Zero\n\nA game of trivia where the objective is to ace all questions in the shortest time possible\n\n![](https://images.pexels.com/photos/3764014/pexels-photo-3764014.jpeg?auto=compress&cs=tinysrgb&h=300&dpr=1)\n\n(source https://www.pexels.com/photo/young-athletes-preparing-for-running-in-training-hall-3764014/)\n## Rules\n* The time starts when you press the _Complete Task_ button\n* Each question must be answered correctly\n* If your answer is wrong, the question will be presented to you again, which costs time\n* Time is stopped after the last question has been aswered",
+      "type": "text",
+      "id": "Field_08vem56"
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "64e8656"
+  },
+  "type": "default",
+  "id": "Form_a83e523c-eb34-4dfa-9d23-078837e6ecb4",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}

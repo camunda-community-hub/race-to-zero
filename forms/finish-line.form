@@ -1,0 +1,39 @@
+{
+  "components": [
+    {
+      "text": "# Congratulations\n\nYou have answered all questions correctly!\n\n![Image Source](https://images.pexels.com/photos/40815/youth-active-jump-happy-40815.jpeg?auto=compress&cs=tinysrgb&h=350&dpr=1)\n\n(source https://www.pexels.com/@jill-wellington-1638660/)",
+      "type": "text",
+      "id": "Field_1aoi9e0"
+    },
+    {
+      "label": "Start Time",
+      "type": "textfield",
+      "id": "Field_0og700l",
+      "key": "startTime",
+      "disabled": true
+    },
+    {
+      "label": "End Time",
+      "type": "textfield",
+      "id": "Field_15e0i0u",
+      "key": "endTime",
+      "disabled": true
+    },
+    {
+      "label": "Your Time",
+      "type": "textfield",
+      "id": "Field_131rg5p",
+      "key": "totalTime",
+      "disabled": true
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "98b8b21"
+  },
+  "type": "default",
+  "id": "Form_ac4bdb90-f709-44cd-a82f-204504b7996e",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}

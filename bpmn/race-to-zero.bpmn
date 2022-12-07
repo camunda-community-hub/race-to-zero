@@ -1,0 +1,422 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bpmn:definitions xmlns:bpmn="http://www.omg.org/spec/BPMN/20100524/MODEL" xmlns:bpmndi="http://www.omg.org/spec/BPMN/20100524/DI" xmlns:dc="http://www.omg.org/spec/DD/20100524/DC" xmlns:di="http://www.omg.org/spec/DD/20100524/DI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:zeebe="http://camunda.org/schema/zeebe/1.0" xmlns:modeler="http://camunda.org/schema/modeler/1.0" xmlns:camunda="http://camunda.org/schema/1.0/bpmn" id="Definitions_1" targetNamespace="http://bpmn.io/schema/bpmn" exporter="Camunda Web Modeler" exporterVersion="64e8656" modeler:executionPlatform="Camunda Cloud" modeler:executionPlatformVersion="8.1.0" camunda:diagramRelationId="7362b4c2-652a-4bdc-8793-46ddd4c21eb3">
+  <bpmn:process id="Process_010cf5d9-ba1a-4046-b100-9117a5d441bb" name="Race to Zero" isExecutable="true">
+    <bpmn:extensionElements>
+      <zeebe:userTaskForm id="userTaskForm_0v3gl6g">{
+  "components": [
+    {
+      "label": "Question",
+      "type": "textfield",
+      "id": "Field_1v9voib",
+      "key": "question",
+      "disabled": true
+    },
+    {
+      "label": "Answer",
+      "type": "number",
+      "id": "Field_1ngml17",
+      "key": "answer",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "4296f7b"
+  },
+  "type": "default",
+  "id": "Form_2068cad0-bfbf-4430-82e3-5782df48b48f",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}</zeebe:userTaskForm>
+      <zeebe:userTaskForm id="userTaskForm_0mid5r2">{
+  "components": [
+    {
+      "label": "Question",
+      "type": "textfield",
+      "id": "Field_1v9voib",
+      "key": "question",
+      "disabled": true
+    },
+    {
+      "values": [
+        {
+          "label": "Yes",
+          "value": "true"
+        },
+        {
+          "label": "No",
+          "value": "false"
+        }
+      ],
+      "label": "Answer",
+      "type": "radio",
+      "id": "Field_1lmhwc2",
+      "key": "answer",
+      "defaultValue": "false",
+      "validate": {
+        "required": true
+      }
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "4296f7b"
+  },
+  "type": "default",
+  "id": "Form_2068cad0-bfbf-4430-82e3-5782df48b48f",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}</zeebe:userTaskForm>
+      <zeebe:userTaskForm id="userTaskForm_2bd6m2g">{
+  "components": [
+    {
+      "label": "Question",
+      "type": "textfield",
+      "id": "Field_1v9voib",
+      "key": "question",
+      "disabled": true
+    },
+    {
+      "label": "Answer",
+      "type": "radio",
+      "id": "Field_16frf0q",
+      "key": "answer",
+      "validate": {
+        "required": true
+      },
+      "valuesKey": "choices"
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "98b8b21"
+  },
+  "type": "default",
+  "id": "Form_2068cad0-bfbf-4430-82e3-5782df48b48f",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}</zeebe:userTaskForm>
+      <zeebe:userTaskForm id="userTaskForm_3mr4kar">{
+  "components": [
+    {
+      "text": "# Congratulations\n\nYou have answered all questions correctly!\n\n![Image Source](https://images.pexels.com/photos/40815/youth-active-jump-happy-40815.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=350&amp;dpr=1)\n\n(source https://www.pexels.com/@jill-wellington-1638660/)",
+      "type": "text",
+      "id": "Field_1aoi9e0"
+    },
+    {
+      "label": "Start Time",
+      "type": "textfield",
+      "id": "Field_0og700l",
+      "key": "startTime",
+      "disabled": true
+    },
+    {
+      "label": "End Time",
+      "type": "textfield",
+      "id": "Field_15e0i0u",
+      "key": "endTime",
+      "disabled": true
+    },
+    {
+      "label": "Your Time",
+      "type": "textfield",
+      "id": "Field_131rg5p",
+      "key": "totalTime",
+      "disabled": true
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "98b8b21"
+  },
+  "type": "default",
+  "id": "Form_ac4bdb90-f709-44cd-a82f-204504b7996e",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}</zeebe:userTaskForm>
+      <zeebe:userTaskForm id="userTaskForm_19jo1qe">{
+  "components": [
+    {
+      "text": "# Race to Zero\n\nA game of trivia where the objective is to ace all questions in the shortest time possible\n\n![](https://images.pexels.com/photos/3764014/pexels-photo-3764014.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=300&amp;dpr=1)\n\n(source https://www.pexels.com/photo/young-athletes-preparing-for-running-in-training-hall-3764014/)\n## Rules\n* The time starts when you press the _Complete Task_ button\n* Each question must be answered correctly\n* If your answer is wrong, the question will be presented to you again, which costs time\n* Time is stopped after the last question has been aswered",
+      "type": "text",
+      "id": "Field_08vem56"
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "64e8656"
+  },
+  "type": "default",
+  "id": "Form_a83e523c-eb34-4dfa-9d23-078837e6ecb4",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}</zeebe:userTaskForm>
+    </bpmn:extensionElements>
+    <bpmn:startEvent id="StartEvent_1">
+      <bpmn:extensionElements />
+      <bpmn:outgoing>Flow_148oiqr</bpmn:outgoing>
+    </bpmn:startEvent>
+    <bpmn:endEvent id="Event_1c3ffvb">
+      <bpmn:extensionElements>
+        <zeebe:ioMapping>
+          <zeebe:output source="=endTime - startTime" target="totalTime3" />
+        </zeebe:ioMapping>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1wbn090</bpmn:incoming>
+    </bpmn:endEvent>
+    <bpmn:sequenceFlow id="Flow_1v6z7dy" sourceRef="get_ready" targetRef="Activity_0jl6tpi" />
+    <bpmn:sequenceFlow id="Flow_148oiqr" sourceRef="StartEvent_1" targetRef="get_ready" />
+    <bpmn:userTask id="get_ready" name="Get Ready">
+      <bpmn:extensionElements>
+        <zeebe:ioMapping>
+          <zeebe:output source="=string(now())" target="startTime" />
+        </zeebe:ioMapping>
+        <zeebe:formDefinition formKey="camunda-forms:bpmn:userTaskForm_19jo1qe" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_148oiqr</bpmn:incoming>
+      <bpmn:outgoing>Flow_1v6z7dy</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:sequenceFlow id="Flow_1wbn090" sourceRef="finish_line" targetRef="Event_1c3ffvb" />
+    <bpmn:userTask id="finish_line" name="Finish Line">
+      <bpmn:extensionElements>
+        <zeebe:ioMapping>
+          <zeebe:input source="=date and time(endTime) - date and time(startTime)" target="totalTime" />
+        </zeebe:ioMapping>
+        <zeebe:formDefinition formKey="camunda-forms:bpmn:userTaskForm_3mr4kar" />
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_0oi8ye4</bpmn:incoming>
+      <bpmn:outgoing>Flow_1wbn090</bpmn:outgoing>
+    </bpmn:userTask>
+    <bpmn:subProcess id="Activity_0jl6tpi">
+      <bpmn:extensionElements>
+        <zeebe:ioMapping>
+          <zeebe:input source="=null" target="answer" />
+          <zeebe:output source="=string(now())" target="endTime" />
+        </zeebe:ioMapping>
+      </bpmn:extensionElements>
+      <bpmn:incoming>Flow_1v6z7dy</bpmn:incoming>
+      <bpmn:outgoing>Flow_0oi8ye4</bpmn:outgoing>
+      <bpmn:multiInstanceLoopCharacteristics>
+        <bpmn:extensionElements>
+          <zeebe:loopCharacteristics inputCollection="=cards" inputElement="card" />
+        </bpmn:extensionElements>
+      </bpmn:multiInstanceLoopCharacteristics>
+      <bpmn:startEvent id="Event_09c9jcn">
+        <bpmn:outgoing>Flow_097dkxc</bpmn:outgoing>
+      </bpmn:startEvent>
+      <bpmn:exclusiveGateway id="Gateway_1chxf82">
+        <bpmn:incoming>Flow_097dkxc</bpmn:incoming>
+        <bpmn:incoming>wrong_answer</bpmn:incoming>
+        <bpmn:outgoing>Flow_0olkxly</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:sequenceFlow id="Flow_097dkxc" sourceRef="Event_09c9jcn" targetRef="Gateway_1chxf82" />
+      <bpmn:exclusiveGateway id="Gateway_18n2nvd">
+        <bpmn:incoming>Flow_0olkxly</bpmn:incoming>
+        <bpmn:outgoing>boolean_branch</bpmn:outgoing>
+        <bpmn:outgoing>number_branch</bpmn:outgoing>
+        <bpmn:outgoing>choice_branch</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:sequenceFlow id="Flow_0olkxly" sourceRef="Gateway_1chxf82" targetRef="Gateway_18n2nvd" />
+      <bpmn:sequenceFlow id="boolean_branch" name="yes/no" sourceRef="Gateway_18n2nvd" targetRef="boolean_question">
+        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=card.type = "boolean"</bpmn:conditionExpression>
+      </bpmn:sequenceFlow>
+      <bpmn:exclusiveGateway id="Gateway_1hz8t82">
+        <bpmn:incoming>Flow_1xr8is8</bpmn:incoming>
+        <bpmn:incoming>Flow_0r3flwa</bpmn:incoming>
+        <bpmn:incoming>Flow_19okysn</bpmn:incoming>
+        <bpmn:outgoing>Flow_1557ixv</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:sequenceFlow id="Flow_1xr8is8" sourceRef="boolean_question" targetRef="Gateway_1hz8t82" />
+      <bpmn:exclusiveGateway id="check_answer" name="Check Answer" default="Flow_0e9ekzu">
+        <bpmn:incoming>Flow_1557ixv</bpmn:incoming>
+        <bpmn:outgoing>Flow_0e9ekzu</bpmn:outgoing>
+        <bpmn:outgoing>wrong_answer</bpmn:outgoing>
+      </bpmn:exclusiveGateway>
+      <bpmn:sequenceFlow id="Flow_1557ixv" sourceRef="Gateway_1hz8t82" targetRef="check_answer" />
+      <bpmn:endEvent id="Event_0abu82w">
+        <bpmn:incoming>Flow_0e9ekzu</bpmn:incoming>
+      </bpmn:endEvent>
+      <bpmn:sequenceFlow id="Flow_0e9ekzu" sourceRef="check_answer" targetRef="Event_0abu82w" />
+      <bpmn:sequenceFlow id="wrong_answer" name="Wrong Answer" sourceRef="check_answer" targetRef="Gateway_1chxf82">
+        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=answer != card.expectedAnswer</bpmn:conditionExpression>
+      </bpmn:sequenceFlow>
+      <bpmn:userTask id="boolean_question" name="Yes / No Question">
+        <bpmn:extensionElements>
+          <zeebe:ioMapping>
+            <zeebe:input source="=card.question" target="question" />
+          </zeebe:ioMapping>
+          <zeebe:formDefinition formKey="camunda-forms:bpmn:userTaskForm_0mid5r2" />
+        </bpmn:extensionElements>
+        <bpmn:incoming>boolean_branch</bpmn:incoming>
+        <bpmn:outgoing>Flow_1xr8is8</bpmn:outgoing>
+      </bpmn:userTask>
+      <bpmn:sequenceFlow id="number_branch" name="number" sourceRef="Gateway_18n2nvd" targetRef="number_question">
+        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=card.type = "number"</bpmn:conditionExpression>
+      </bpmn:sequenceFlow>
+      <bpmn:userTask id="number_question" name="Number Question">
+        <bpmn:extensionElements>
+          <zeebe:ioMapping>
+            <zeebe:input source="=card.question" target="question" />
+          </zeebe:ioMapping>
+          <zeebe:formDefinition formKey="camunda-forms:bpmn:userTaskForm_0v3gl6g" />
+        </bpmn:extensionElements>
+        <bpmn:incoming>number_branch</bpmn:incoming>
+        <bpmn:outgoing>Flow_0r3flwa</bpmn:outgoing>
+      </bpmn:userTask>
+      <bpmn:sequenceFlow id="Flow_0r3flwa" sourceRef="number_question" targetRef="Gateway_1hz8t82" />
+      <bpmn:sequenceFlow id="choice_branch" name="choice" sourceRef="Gateway_18n2nvd" targetRef="multiple_choice_question">
+        <bpmn:conditionExpression xsi:type="bpmn:tFormalExpression">=card.type = "choices"</bpmn:conditionExpression>
+      </bpmn:sequenceFlow>
+      <bpmn:userTask id="multiple_choice_question" name="Multiple Choice Question">
+        <bpmn:extensionElements>
+          <zeebe:ioMapping>
+            <zeebe:input source="=card.question" target="question" />
+            <zeebe:input source="=card.choices" target="choices" />
+          </zeebe:ioMapping>
+          <zeebe:formDefinition formKey="camunda-forms:bpmn:userTaskForm_2bd6m2g" />
+        </bpmn:extensionElements>
+        <bpmn:incoming>choice_branch</bpmn:incoming>
+        <bpmn:outgoing>Flow_19okysn</bpmn:outgoing>
+      </bpmn:userTask>
+      <bpmn:sequenceFlow id="Flow_19okysn" sourceRef="multiple_choice_question" targetRef="Gateway_1hz8t82" />
+    </bpmn:subProcess>
+    <bpmn:sequenceFlow id="Flow_0oi8ye4" sourceRef="Activity_0jl6tpi" targetRef="finish_line" />
+  </bpmn:process>
+  <bpmndi:BPMNDiagram id="BPMNDiagram_1">
+    <bpmndi:BPMNPlane id="BPMNPlane_1" bpmnElement="Process_010cf5d9-ba1a-4046-b100-9117a5d441bb">
+      <bpmndi:BPMNShape id="_BPMNShape_StartEvent_2" bpmnElement="StartEvent_1">
+        <dc:Bounds x="152" y="160" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_1c3ffvb_di" bpmnElement="Event_1c3ffvb">
+        <dc:Bounds x="1652" y="160" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_1p4fr6d_di" bpmnElement="get_ready">
+        <dc:Bounds x="260" y="138" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0sg7ysn_di" bpmnElement="finish_line">
+        <dc:Bounds x="1500" y="138" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0jl6tpi_di" bpmnElement="Activity_0jl6tpi" isExpanded="true">
+        <dc:Bounds x="480" y="60" width="910" height="430" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_09c9jcn_di" bpmnElement="Event_09c9jcn">
+        <dc:Bounds x="520" y="160" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1chxf82_di" bpmnElement="Gateway_1chxf82" isMarkerVisible="true">
+        <dc:Bounds x="615" y="153" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_18n2nvd_di" bpmnElement="Gateway_18n2nvd" isMarkerVisible="true">
+        <dc:Bounds x="725" y="153" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_1hz8t82_di" bpmnElement="Gateway_1hz8t82" isMarkerVisible="true">
+        <dc:Bounds x="1005" y="153" width="50" height="50" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Gateway_0vkksth_di" bpmnElement="check_answer" isMarkerVisible="true">
+        <dc:Bounds x="1125" y="153" width="50" height="50" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="1115" y="210" width="71" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Event_0abu82w_di" bpmnElement="Event_0abu82w">
+        <dc:Bounds x="1252" y="160" width="36" height="36" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0en0rlz_di" bpmnElement="boolean_question">
+        <dc:Bounds x="840" y="138" width="100" height="80" />
+        <bpmndi:BPMNLabel />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0ldk3fw_di" bpmnElement="number_question">
+        <dc:Bounds x="840" y="250" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape id="Activity_0jjpxqh_di" bpmnElement="multiple_choice_question">
+        <dc:Bounds x="840" y="360" width="100" height="80" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNEdge id="Flow_097dkxc_di" bpmnElement="Flow_097dkxc">
+        <di:waypoint x="556" y="178" />
+        <di:waypoint x="615" y="178" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0olkxly_di" bpmnElement="Flow_0olkxly">
+        <di:waypoint x="665" y="178" />
+        <di:waypoint x="725" y="178" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1x3wgse_di" bpmnElement="boolean_branch">
+        <di:waypoint x="775" y="178" />
+        <di:waypoint x="840" y="178" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="792" y="160" width="33" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1xr8is8_di" bpmnElement="Flow_1xr8is8">
+        <di:waypoint x="940" y="178" />
+        <di:waypoint x="1005" y="178" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1557ixv_di" bpmnElement="Flow_1557ixv">
+        <di:waypoint x="1055" y="178" />
+        <di:waypoint x="1125" y="178" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0e9ekzu_di" bpmnElement="Flow_0e9ekzu">
+        <di:waypoint x="1175" y="178" />
+        <di:waypoint x="1252" y="178" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1io4d2f_di" bpmnElement="wrong_answer">
+        <di:waypoint x="1150" y="153" />
+        <di:waypoint x="1150" y="90" />
+        <di:waypoint x="640" y="90" />
+        <di:waypoint x="640" y="153" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="860" y="72" width="72" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0xbuimk_di" bpmnElement="number_branch">
+        <di:waypoint x="750" y="203" />
+        <di:waypoint x="750" y="290" />
+        <di:waypoint x="840" y="290" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="781" y="268" width="38" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0r3flwa_di" bpmnElement="Flow_0r3flwa">
+        <di:waypoint x="940" y="290" />
+        <di:waypoint x="1030" y="290" />
+        <di:waypoint x="1030" y="203" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_084hzs3_di" bpmnElement="choice_branch">
+        <di:waypoint x="750" y="203" />
+        <di:waypoint x="750" y="400" />
+        <di:waypoint x="840" y="400" />
+        <bpmndi:BPMNLabel>
+          <dc:Bounds x="784" y="383" width="32" height="14" />
+        </bpmndi:BPMNLabel>
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_19okysn_di" bpmnElement="Flow_19okysn">
+        <di:waypoint x="940" y="400" />
+        <di:waypoint x="1030" y="400" />
+        <di:waypoint x="1030" y="203" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1v6z7dy_di" bpmnElement="Flow_1v6z7dy">
+        <di:waypoint x="360" y="178" />
+        <di:waypoint x="480" y="178" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_148oiqr_di" bpmnElement="Flow_148oiqr">
+        <di:waypoint x="188" y="178" />
+        <di:waypoint x="260" y="178" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_1wbn090_di" bpmnElement="Flow_1wbn090">
+        <di:waypoint x="1600" y="178" />
+        <di:waypoint x="1652" y="178" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge id="Flow_0oi8ye4_di" bpmnElement="Flow_0oi8ye4">
+        <di:waypoint x="1390" y="178" />
+        <di:waypoint x="1500" y="178" />
+      </bpmndi:BPMNEdge>
+    </bpmndi:BPMNPlane>
+  </bpmndi:BPMNDiagram>
+</bpmn:definitions>

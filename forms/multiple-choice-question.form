@@ -1,0 +1,31 @@
+{
+  "components": [
+    {
+      "label": "Question",
+      "type": "textfield",
+      "id": "Field_1v9voib",
+      "key": "question",
+      "disabled": true
+    },
+    {
+      "label": "Answer",
+      "type": "radio",
+      "id": "Field_16frf0q",
+      "key": "answer",
+      "validate": {
+        "required": true
+      },
+      "valuesKey": "choices",
+      "properties": {}
+    }
+  ],
+  "schemaVersion": 5,
+  "exporter": {
+    "name": "Camunda Web Modeler",
+    "version": "98b8b21"
+  },
+  "type": "default",
+  "id": "Form_2068cad0-bfbf-4430-82e3-5782df48b48f",
+  "executionPlatform": "Camunda Cloud",
+  "executionPlatformVersion": "8.1.0"
+}

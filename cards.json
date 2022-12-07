@@ -1,0 +1,33 @@
+{
+    "cards": [
+        {
+            "question": "Is the moon made of cheese?",
+            "type": "boolean",
+            "expectedAnswer": "false"
+        },
+        {
+            "question": "How many days are in a leap year?",
+            "type": "number",
+            "expectedAnswer": 366
+        },
+        {
+            "question": "Which is the traffic light signal to stop?",
+            "type": "choices",
+            "expectedAnswer": "Red",
+            "choices": [
+                {
+                    "value": "Red",
+                    "label": "Red Light"
+                },
+                {
+                    "value": "Yellow",
+                    "label": "Yellow Light"
+                },
+                {
+                    "value": "Green",
+                    "label": "Green Light"
+                }
+            ]
+        }
+    ]
+}

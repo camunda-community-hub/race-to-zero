@@ -17,7 +17,7 @@ The file [cards.json](./cards.json) contains examples for:
 Simply add your own questions and expected answers. The JSON snippet can then be passed in when starting a process instance.
 
 ## How to play
-1. Upload [./bpmn/race-to-zero.bpmn](./bpmn/race-to-zero.bpmn)
+1. Deploy [./bpmn/race-to-zero.bpmn](./bpmn/race-to-zero.bpmn) process
 2. Start an instance of this process and pass in the questions (see above)
 3. Go to Tasklist
 
